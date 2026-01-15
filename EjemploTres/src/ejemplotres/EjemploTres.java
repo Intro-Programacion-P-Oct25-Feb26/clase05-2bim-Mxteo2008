@@ -26,13 +26,13 @@ public class EjemploTres {
         // El número 100 es igual a 100
         
         
-        // System.out.println( obtenerDecimal("10.2") + 20 );
-        System.out.printf("El número mayor es: %.2f\n", 
-                NumberUtils.max(10.2, 101.1, 114.2) );
+        System.out.println( obtenerDecimal("10.2") + 20 ); //envia como argumento una cadena
+        //System.out.printf("El número mayor es: %.2f\n", 
+                //NumberUtils.max(10.2, 101.1, 114.2) );
     }
     
     public static double obtenerDecimal(String cadena){
-        double d = NumberUtils.createDouble(cadena);
+        double d = NumberUtils.createDouble(cadena);// y acá esa cadena se transforma a decimal
         return d;
     }
     
